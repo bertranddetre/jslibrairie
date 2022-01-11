@@ -1,6 +1,6 @@
 /* On récupère les arguments passés dans l'url (ici bookid) */
 
-let params = window.location.search; // renvoie "?bookid=???" > ??? est l'id passé dans home.js
+let params = window.location.search; 
 let bookIdUrl = params.slice(8);
 let currentBook = {};
 

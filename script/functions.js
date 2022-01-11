@@ -1,7 +1,7 @@
-/* Insérer les livres sur la page d'accueil HTML */
+
 
 const insertBooksInHomePage = (booksList, htmlContainer) => {
-  // On boucle 8 fois (car on affiche 8 éléments)
+  // On boucle 8 fois 
   for(let i=0; i<8; i++) {
     // Est-ce que le livre a du stock ?
     let dispo = booksList[i].nbStock > 0 ? "book-available" : "book-unavailable";
@@ -20,7 +20,7 @@ const insertBooksInHomePage = (booksList, htmlContainer) => {
   }
 }
 
-/* Fait passer les infos d'un livre dans l'url */
+/* on fait passer les infos d'un livre dans l'url */
 
 const bookIdInUrl = (bookId, page) => {
   window.location.href="./"+page+".html?bookid="+bookId;
