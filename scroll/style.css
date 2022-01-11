@@ -1,0 +1,29 @@
+
+* {
+    box-sizing : border-box;
+    font-family: 'Courier New', Courier, monospace;
+    list-style: none; /*pour enlever les bullet-points dans une liste*/
+    }
+    
+body {
+    text-align: center;
+    margin: 0;
+    color: white;
+    min-height: 200vh;
+    overflow-x: hidden; /*on peut scroller qd même vers le bas*/
+}
+
+nav {
+    background: rgb(105, 84, 223);
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: -50px; /*faut qu'elle soit cachée au départ*/
+    transition: 1s;
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0; /*les ul ont en général des padding par défaut */
+}
